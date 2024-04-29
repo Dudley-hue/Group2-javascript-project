@@ -1,0 +1,39 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "firstName": "Kelvin",
+      "secondName": "Githinji",
+      "course": "Software Engineering",
+      "feeBalance": 0
+    },
+    {
+      "id": "2",
+      "firstName": "Vivian",
+      "secondName": "Mueni",
+      "course": "Cyber Security",
+      "feeBalance": 0
+    },
+    {
+      "id": "3",
+      "firstName": "Jack",
+      "secondName": "Otieno",
+      "course": "Data Science",
+      "feeBalance": 0
+    },
+    {
+      "id": "edbe",
+      "firstName": "Jacob",
+      "secondName": "Juma",
+      "course": "Data Science",
+      "feeBalance": 0
+    },
+    {
+      "id": "a8a6",
+      "firstName": "Bridget",
+      "secondName": "Venus",
+      "course": "Software Engineering",
+      "feeBalance": 0
+    }
+  ]
+}
