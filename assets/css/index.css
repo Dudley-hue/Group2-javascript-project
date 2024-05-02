@@ -4,3 +4,116 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(240, 240, 240, 0.8);
+    height: 100vh;
+}
+
+.login-container img {
+    width: 85px;
+    object-fit: cover;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+.login-container h1 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.login-container .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.login-form {
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    width: 30%;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 6px 18px -7px rgba(0, 0, 0, 0.94);
+    -webkit-box-shadow: 0px 6px 18px -7px rgba(0, 0, 0, 0.94);
+    -moz-box-shadow: 0px 6px 18px -7px rgba(0, 0, 0, 0.94);
+}
+
+.login-form h2 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 17px;
+    font-weight: normal;
+    font-family: "Sora"sans-serif;
+    text-align: center;
+    padding-top: 1.7rem;
+}
+
+.login-form .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 20px;
+}
+
+.login-form .usernameLogin,
+.passwordLogin {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.login-form .usernameInput,
+.passwordInput ::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+.login-form .usernameInput,
+.passwordInput {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    font-family: sans-serif;
+    background: transparent;
+    padding-left: 15px;
+}
+
+.login-form .form form input[type="submit"] {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color: #333;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 10px white inset !important;
+}
