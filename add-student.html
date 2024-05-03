@@ -14,13 +14,36 @@
 <body>
     <div class="admin-dashboard">
         <div class="sidebar">
-            <a href="/">Home</a>
-            <a href="/students-table.html" class="active">Students table</a>
-            <a href="/add-student.html">Add student</a>
+            <a href="/admin-dashboard.html">Home</a>
+            <a href="/students-table.html">Students table</a>
+            <a href="/add-student.html" class="active">Add student</a>
             <a href="#">Fee table</a>
         </div>
         <div class="main">
-            
+            <h2>Student Registration Form</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Fullname:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Course:</label>
+                    <input type="text" id="course" name="course" required>
+                </div>
+                <button type="submit" class="register-button">Register</button>
+            </form>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

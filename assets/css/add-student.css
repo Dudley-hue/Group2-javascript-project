@@ -32,3 +32,51 @@
     background-color: #555;
 }
 
+.main h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.main form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
