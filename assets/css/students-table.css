@@ -28,7 +28,29 @@
     background-color: #555;
 }
 
-.main {
-    margin-left: 250px;
-    padding: 20px;
+.sidebar .active {
+    background-color: #555;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
 }

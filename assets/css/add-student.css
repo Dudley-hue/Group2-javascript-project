@@ -28,7 +28,7 @@
     background-color: #555;
 }
 
-.main {
-    margin-left: 250px;
-    padding: 20px;
+.sidebar .active {
+    background-color: #555;
 }
+
