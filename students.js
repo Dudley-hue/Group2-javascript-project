@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .catch(error => {
                 console.error("Error fetching data:", error);
-                alert("An error occurred while fetching data. Please try again later.");
+                // alert("An error occurred while fetching data. Please try again later.");
             });
     }
 
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         students.forEach(student => {
             addStudentToTable(student);
         });
-        attachEditDeleteListeners(); 
+        attachEditDeleteListeners();
     }
 
     function addStudentToTable(student) {
@@ -55,11 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
         tableBody.addEventListener("click", event => {
             const targetButton = event.target;
             if (targetButton.classList.contains("edit-button")) {
-                const studentId = targetButton.id.split("-")[2]; 
+                const studentId = targetButton.id.split("-")[2];
                 // Call edit function with studentId
                 editStudent(studentId);
             } else if (targetButton.classList.contains("delete-button")) {
-                const studentId = targetButton.id.split("-")[2]; 
+                const studentId = targetButton.id.split("-")[2];
                 // Call delete function with studentId
                 deleteStudent(studentId);
             }
@@ -68,10 +68,55 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function editStudent(studentId) {
         console.log(`Editing student with ID: ${studentId}`);
+        const newFullName = prompt('Enter new full name:');
+        const newEmail = prompt('Enter new email:');
+        const newGender = prompt('Enter new gender:');
+        const newCourse = prompt('Enter new course:');
+
+        if (newFullName !== null && newEmail !== null && newGender !== null && newCourse !== null) {
+            const updatedStudent = {
+                fullName: newFullName,
+                email: newEmail,
+                gender: newGender,
+                course: newCourse
+            };
+
+            return fetch(`http://localhost:3000/students/${studentId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(updatedStudent)
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to edit student.');
+                    }
+                    loadStudentsFromAPI(); // Refresh student list after editing
+                })
+                .catch(error => {
+                    console.error('Error editing student:', error);
+                });
+        }
     }
 
     function deleteStudent(studentId) {
         console.log(`Deleting student with ID: ${studentId}`);
+        const confirmDelete = confirm('Are you sure you want to delete this student?');
+        if (confirmDelete) {
+            fetch(`http://localhost:3000/students/${studentId}`, {
+                method: 'DELETE'
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to delete student.');
+                    }
+                    loadStudentsFromAPI(); // Refresh student list after deletion
+                })
+                .catch(error => {
+                    console.error('Error deleting student:', error);
+                });
+        }
     }
 
     // Search students based on full name
@@ -82,7 +127,8 @@ document.addEventListener("DOMContentLoaded", () => {
         );
         renderStudents(filteredStudents); // Display filtered students
     });
+
     function addStudent(student) {
-    
+        // Implement adding a new student logic here
     }
 });

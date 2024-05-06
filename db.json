@@ -1,36 +1,11 @@
 {
   "students": [
     {
-      "id": "1",
-      "fullName": "Kelvin Githinji",
-      "email": "kelvin.githinji@gmail.com",
-      "course": "Software Engineering",
+      "fullName": "Brian Victor",
+      "email": "brian.victor@gmail.com",
       "gender": "Male",
-      "feeBalance": 0
-    },
-    {
-      "id": "2",
-      "fullName": "Vivian Mueni",
-      "email": "vivian.mueni@gmail.com",
-      "course": "Cyber Security",
-      "gender": "Female",
-      "feeBalance": 0
-    },
-    {
-      "id": "3",
-      "fullName": "Jack Otieno",
-      "email": "jack.otieno@gmail.com",
-      "course": "Data Science",
-      "gender": "Male",
-      "feeBalance": 0
-    },
-    {
-      "id": "edbe",
-      "fullName": "Jacob Juma",
-      "email": "'jacob.juma@gmail.com",
-      "course": "Data Science",
-      "gender": "Male",
-      "feeBalance": 0
+      "course": "Cybersecurity",
+      "id": "edbe"
     },
     {
       "id": "a8a6",
@@ -70,6 +45,22 @@
       "email": "whitney.makotsi@gmail.com",
       "gender": "female",
       "course": "UI/UX Design",
+      "feeBalance": 0
+    },
+    {
+      "id": "55a1",
+      "fullName": "Teddy Lowell",
+      "email": "Teddy.lowell@gmail.com",
+      "gender": "male",
+      "course": "Cyber Security",
+      "feeBalance": 0
+    },
+    {
+      "id": "9171",
+      "fullName": "Kelvin Githinji",
+      "email": "Kelvin.Githinji@gmail.com",
+      "gender": "male",
+      "course": "Product design",
       "feeBalance": 0
     }
   ]
