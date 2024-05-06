@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         students.forEach(student => {
             addStudentToTable(student);
         });
-        attachEditDeleteListeners(); // Attach event listeners after rendering
+        attachEditDeleteListeners(); 
     }
 
     function addStudentToTable(student) {
@@ -55,11 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
         tableBody.addEventListener("click", event => {
             const targetButton = event.target;
             if (targetButton.classList.contains("edit-button")) {
-                const studentId = targetButton.id.split("-")[2]; // Extract student id
+                const studentId = targetButton.id.split("-")[2]; 
                 // Call edit function with studentId
                 editStudent(studentId);
             } else if (targetButton.classList.contains("delete-button")) {
-                const studentId = targetButton.id.split("-")[2]; // Extract student id
+                const studentId = targetButton.id.split("-")[2]; 
                 // Call delete function with studentId
                 deleteStudent(studentId);
             }
@@ -67,12 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function editStudent(studentId) {
-        // Implement edit logic here using the studentId
         console.log(`Editing student with ID: ${studentId}`);
     }
 
     function deleteStudent(studentId) {
-        // Implement delete logic here using the studentId
         console.log(`Deleting student with ID: ${studentId}`);
     }
 
@@ -84,9 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         );
         renderStudents(filteredStudents); // Display filtered students
     });
-
-    // Sample function to add a new student (you can modify this based on your actual registration process)
     function addStudent(student) {
-        // Implement adding a new student logic here
+    
     }
 });

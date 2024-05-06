@@ -83,15 +83,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function editStudent(studentId) {
-        // Implement edit logic here using the studentId
         console.log(`Editing student with ID: ${studentId}`);
-        // You can populate a form with student data for editing
-        // For example: showEditForm(studentId);
     }
 
-    // Sample function to show edit form
     function showEditForm(studentId) {
-        // Implement logic to show edit form with student data for editing
     }
 
     // Search students based on full name
@@ -103,8 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
         renderStudents(filteredStudents); // Display filtered students
     });
 
-    // Sample function to add a new student (you can modify this based on your actual registration process)
     function addStudent(student) {
-        // Implement adding a new student logic here
     }
 });
