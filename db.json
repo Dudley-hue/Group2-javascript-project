@@ -2,37 +2,74 @@
   "students": [
     {
       "id": "1",
-      "firstName": "Kelvin",
-      "secondName": "Githinji",
+      "fullName": "Kelvin Githinji",
+      "email": "kelvin.githinji@gmail.com",
       "course": "Software Engineering",
+      "gender": "Male",
       "feeBalance": 0
     },
     {
       "id": "2",
-      "firstName": "Vivian",
-      "secondName": "Mueni",
+      "fullName": "Vivian Mueni",
+      "email": "vivian.mueni@gmail.com",
       "course": "Cyber Security",
+      "gender": "Female",
       "feeBalance": 0
     },
     {
       "id": "3",
-      "firstName": "Jack",
-      "secondName": "Otieno",
+      "fullName": "Jack Otieno",
+      "email": "jack.otieno@gmail.com",
       "course": "Data Science",
+      "gender": "Male",
       "feeBalance": 0
     },
     {
       "id": "edbe",
-      "firstName": "Jacob",
-      "secondName": "Juma",
+      "fullName": "Jacob Juma",
+      "email": "'jacob.juma@gmail.com",
       "course": "Data Science",
+      "gender": "Male",
       "feeBalance": 0
     },
     {
       "id": "a8a6",
-      "firstName": "Bridget",
-      "secondName": "Venus",
+      "fullName": "Bridget Venus",
+      "email": "bridget.venus@gmail.com",
       "course": "Software Engineering",
+      "gender": "Female",
+      "feeBalance": 0
+    },
+    {
+      "id": "daf6",
+      "fullName": "Dudley Antony",
+      "email": "dudleykimani331@gmail.com",
+      "gender": "male",
+      "course": "Cyber Security",
+      "feeBalance": 0
+    },
+    {
+      "id": "acb1",
+      "fullName": "Dudley Antony",
+      "email": "dudleykimani331@gmail.com",
+      "gender": "male",
+      "course": "software engineer",
+      "feeBalance": 0
+    },
+    {
+      "id": "c71e",
+      "fullName": "Collins Njuguna",
+      "email": "Collins.njuguna@gmail.com",
+      "gender": "male",
+      "course": "Product design",
+      "feeBalance": 0
+    },
+    {
+      "id": "4fbe",
+      "fullName": "Whitney Makotsi",
+      "email": "whitney.makotsi@gmail.com",
+      "gender": "female",
+      "course": "UI/UX Design",
       "feeBalance": 0
     }
   ]
